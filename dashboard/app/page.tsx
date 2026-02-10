@@ -318,26 +318,12 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center gap-6 text-sm">
             <a 
-              href="/pricing"
-              className="text-purple-400 hover:text-purple-300 transition-colors font-semibold hover:underline underline-offset-4"
-            >
-              View Pricing
-            </a>
-            <a 
               href="https://github.com/ksimback/agentpact" 
               className="text-purple-400 hover:text-purple-300 transition-colors font-semibold hover:underline underline-offset-4"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
-            </a>
-            <a 
-              href="https://x402.org" 
-              className="text-purple-400 hover:text-purple-300 transition-colors font-semibold hover:underline underline-offset-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              x402 Protocol
             </a>
           </div>
         </div>
