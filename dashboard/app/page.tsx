@@ -127,12 +127,18 @@ export default function Home() {
           </p>
           <div className="inline-flex flex-col items-center gap-1">
             <span className="text-gray-500 text-xs uppercase tracking-wider font-semibold">On-Chain Proof Address</span>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 backdrop-blur-sm border border-purple-500/20">
+            <a 
+              href={`https://explorer.solana.com/address/${WALLET_ADDRESS}?cluster=devnet`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-500/40 hover:bg-gray-800/70 transition-all group"
+            >
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <p className="text-gray-400 text-sm font-mono">
+              <span className="text-gray-400 text-sm font-mono group-hover:text-purple-300 transition-colors">
                 {WALLET_ADDRESS}
-              </p>
-            </div>
+              </span>
+              <span className="text-purple-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+            </a>
           </div>
         </div>
 
