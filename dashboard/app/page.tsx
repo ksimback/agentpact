@@ -122,8 +122,11 @@ export default function Home() {
             </h1>
             <div className="h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-purple-500 to-transparent rounded-full"></div>
           </div>
-          <p className="text-gray-300 text-xl mb-3 font-medium">
+          <p className="text-gray-300 text-xl mb-2 font-medium">
             The Trust Layer for Multi-Agent Coordination
+          </p>
+          <p className="text-gray-500 text-base mb-4 max-w-2xl mx-auto">
+            On-chain proof that your AI agents actually did their jobs. Every handoff. Every completion. Verified on Solana.
           </p>
           <div className="inline-flex flex-col items-center gap-1">
             <span className="text-gray-500 text-xs uppercase tracking-wider font-semibold">On-Chain Proof Address</span>
@@ -139,6 +142,64 @@ export default function Home() {
               </span>
               <span className="text-purple-400 group-hover:translate-x-0.5 transition-transform">↗</span>
             </a>
+          </div>
+        </div>
+
+        {/* Why AgentPact */}
+        <div className="glass-card rounded-2xl p-8 lg:p-10 mb-12">
+          <h2 className="text-2xl font-bold text-white mb-4">Why AgentPact?</h2>
+          <p className="text-gray-300 text-lg mb-8">
+            When AI agents work together, there's no way to verify what happened. AgentPact creates an immutable record of every handoff and completion on Solana — giving you <span className="text-purple-400 font-semibold">cryptographic proof</span> that agents did their jobs.
+          </p>
+          
+          {/* Use Cases */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-700/30">
+              <div className="text-3xl mb-3">🤖</div>
+              <h3 className="text-white font-semibold mb-2">Multi-Agent Workflows</h3>
+              <p className="text-gray-400 text-sm">Track task delegation across agent teams. Know exactly who did what and when.</p>
+            </div>
+            <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-700/30">
+              <div className="text-3xl mb-3">💰</div>
+              <h3 className="text-white font-semibold mb-2">Escrow & Payments</h3>
+              <p className="text-gray-400 text-sm">On-chain proof of work completion enables trustless agent-to-agent payments.</p>
+            </div>
+            <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-700/30">
+              <div className="text-3xl mb-3">📋</div>
+              <h3 className="text-white font-semibold mb-2">Audit & Compliance</h3>
+              <p className="text-gray-400 text-sm">Permanent audit trail for regulated industries. Prove AI decisions and handoffs.</p>
+            </div>
+          </div>
+
+          {/* Get Started */}
+          <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-700/30">
+            <h3 className="text-white font-semibold mb-3">Get Started in 3 Lines</h3>
+            <pre className="bg-black/50 rounded-lg p-4 overflow-x-auto text-sm">
+              <code className="text-gray-300">
+{`import { init, logHandoff, logCompletion } from 'agentpact';
+
+await logHandoff('AgentA', 'AgentB', 'Process customer request');
+await logCompletion('AgentB', 'Customer request', 'Resolved successfully');`}
+              </code>
+            </pre>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a 
+                href="https://github.com/ksimback/agentpact" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg text-white font-semibold transition-colors text-sm"
+              >
+                View on GitHub ↗
+              </a>
+              <a 
+                href="https://www.npmjs.com/package/agentpact" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white font-semibold transition-colors text-sm"
+              >
+                npm install agentpact
+              </a>
+            </div>
           </div>
         </div>
 
