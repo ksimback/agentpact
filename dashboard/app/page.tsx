@@ -125,11 +125,14 @@ export default function Home() {
           <p className="text-gray-300 text-xl mb-3 font-medium">
             The Trust Layer for Multi-Agent Coordination
           </p>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 backdrop-blur-sm border border-purple-500/20">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            <p className="text-gray-400 text-sm font-mono">
-              {WALLET_ADDRESS}
-            </p>
+          <div className="inline-flex flex-col items-center gap-1">
+            <span className="text-gray-500 text-xs uppercase tracking-wider font-semibold">On-Chain Proof Address</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 backdrop-blur-sm border border-purple-500/20">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <p className="text-gray-400 text-sm font-mono">
+                {WALLET_ADDRESS}
+              </p>
+            </div>
           </div>
         </div>
 
