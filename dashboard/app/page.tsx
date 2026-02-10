@@ -18,7 +18,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  const WALLET_ADDRESS = 'HHkwN3JrBpfwC2z9ReFcoN6NkSoQujeKK4Wt1QFCgWQG'
+  const WALLET_ADDRESS = 'CrjGeaMg75quUyn1jzVQnCVaUxK9uawxb8ZBhwaWixhP'
 
   useEffect(() => {
     fetchAgentPactEvents()
